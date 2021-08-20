@@ -73,7 +73,7 @@ const SearchBreweries = ({history}) => {
 
     return(
         <div className="mr-1 ml-1">
-            <div className="mb-1">
+            <div className="mt-1 mb-1">
                 <span className="c-pointer" onClick={() => history.push('/breweries')}>List Breweries</span>
                 <span> / </span>
                 <span>Search</span>
