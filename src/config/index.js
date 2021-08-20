@@ -1,9 +1,9 @@
 const dev = {
-    apiURL: '',
+    apiURL: 'https://api.openbrewerydb.org'
 };
 
 const prod = {
-    apiURL: ''
+    apiURL: 'https://api.openbrewerydb.org'
 };
 
 const CONFIG = true ? prod : dev;
