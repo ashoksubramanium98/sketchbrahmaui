@@ -26,6 +26,15 @@ body {
 .justify-content-center {
   justify-content: center;
 }
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-wrap { 
+  flex-wrap: wrap;
+}
+
 .m-0 {
   margin: 0;
 }

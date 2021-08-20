@@ -7,7 +7,7 @@ import { dateFormat } from '../../utils';
 const Breweries = ({history}) => {
 
     const [loading, setLoading] = useState(false);
-    const [data, setData] = useState('');
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         setLoading(true);
@@ -58,19 +58,22 @@ const Breweries = ({history}) => {
         {
             title: 'Updated At',
             dataIndex: 'updated_at',
-            render: (string, record) => <>{dateFormat(string)}</>
+            render: (string) => <>{dateFormat(string)}</>
         },
         {
             title: 'Action',
             render: (string, record) => (
-                <Button type="primary" onClick={() => history.push(`/breweries/${record.id}`)}>More</Button>
+                <Button type="link" onClick={() => history.push(`/breweries/${record.id}`)}>More</Button>
             )
         }
     ];
 
     return(
         <div className="mr-1 ml-1">
-            <h2 className="mt-1">List Breweries</h2>
+            <div className="d-flex align-items-center justify-content-between">
+                <h2 className="mt-1">List Breweries</h2>
+                <Button type="primary" onClick={() => history.push(`/breweries/search`)}>Search</Button>
+            </div>
             <Table rowKey={"id"} size={'small'} loading={loading} columns={columns} dataSource={data} childrenColumnName="antdChildren" pagination={true} scroll={{x: 800}} />
         </div>
     );
