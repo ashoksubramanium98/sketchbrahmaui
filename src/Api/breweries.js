@@ -20,7 +20,7 @@ export const getIndividual = (breweryID) => {
 };
 
 export const search = (text) => {
-    return Axios.get(CONFIG.apiURL + `breweries/search?query=${text}`).then(res => {
+    return Axios.get(CONFIG.apiURL + `/breweries/search?query=${text}`).then(res => {
         let response = res['data'];
         return response;
     }).catch(err => {
