@@ -3,7 +3,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import {createBrowserHistory} from 'history';
 
 import Home from '../components/Home';
-import ApiIntegration from '../components/Api';
+import ApiIntegration from '../components/ApiIntegration';
 import Dashboard from '../components/Dashboard';
 
 const history = createBrowserHistory();
