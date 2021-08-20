@@ -11,6 +11,10 @@ body {
   height: 100vh;
 }
 
+.bg-white {
+  background: #fff;
+}
+
 .d-flex {
   display: flex;
 }
@@ -29,6 +33,10 @@ body {
 
 .justify-content-between {
   justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
 }
 
 .flex-wrap { 
@@ -75,6 +83,26 @@ body {
   margin-bottom: 1rem;
 }
 
+.p-1 {
+  padding: 1rem;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
 .c-pointer {
  cursor: pointer;
 }
@@ -102,4 +130,34 @@ body {
   padding: 1rem;
   background: #ddd;
   border-radius: 3px;
+}
+
+.profile-background {
+  background: #EFFAF5;
+  width: 40px;
+  height: 40px;
+}
+
+.border-100 {
+  border-radius: 100%;
+}
+
+.text-primary {
+  color: #60CA9A;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-size-sm {
+  font-size: 12px;
+}
+
+.font-size-md {
+  font-size: 16px;
+}
+
+.font-size-lg {
+  font-size: 18px;
 }
