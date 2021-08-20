@@ -4,7 +4,7 @@ import * as breweriesApis from '../../Api/breweries';
 import 'antd/dist/antd.css';
 import { dateFormat } from '../../utils';
 
-const ApiIntegration = () => {
+const Breweries = ({history}) => {
 
     const [loading, setLoading] = useState(false);
     const [data, setData] = useState('');
@@ -15,7 +15,7 @@ const ApiIntegration = () => {
             setLoading(false);
             setData(res);
         }).catch(res => {
-            console.log('Unable to load the brewerie');
+            console.log('Unable to load the breweries');
         });
     }, []);
 
@@ -36,7 +36,8 @@ const ApiIntegration = () => {
         },
         {
             title: 'Type',
-            dataIndex: 'brewery_type'
+            dataIndex: 'brewery_type',
+            render: (string) => <Tag color="purple">{string && string.slice(0,1).toUpperCase() + string.slice(1)}</Tag>
         },
         {
             title: 'Street',
@@ -61,8 +62,8 @@ const ApiIntegration = () => {
         },
         {
             title: 'Action',
-            render: (string, record, index) => (
-                <Button type="link" style={{padding: 0}}>More</Button>
+            render: (string, record) => (
+                <Button type="primary" onClick={() => history.push(`/breweries/${record.id}`)}>More</Button>
             )
         }
     ];
@@ -70,9 +71,9 @@ const ApiIntegration = () => {
     return(
         <div className="mr-1 ml-1">
             <h2 className="mt-1">List Breweries</h2>
-            <Table rowKey={"s_no"} size={'small'} loading={loading} columns={columns} dataSource={data} childrenColumnName="antdChildren" pagination={true} scroll={{x: 800}} />
+            <Table rowKey={"id"} size={'small'} loading={loading} columns={columns} dataSource={data} childrenColumnName="antdChildren" pagination={true} scroll={{x: 800}} />
         </div>
     );
 };
 
-export default ApiIntegration;
+export default Breweries;

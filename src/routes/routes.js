@@ -3,7 +3,8 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import {createBrowserHistory} from 'history';
 
 import Home from '../components/Home';
-import ApiIntegration from '../components/ApiIntegration';
+import Breweries from '../components/Breweries';
+import IndividualBrewery from '../components/Breweries/individualBrewery';
 import Dashboard from '../components/Dashboard';
 
 const history = createBrowserHistory();
@@ -12,7 +13,8 @@ const Routes = () => (
     <BrowserRouter>
         <Switch history={history}>
             <Route exact path="/" component={Home} />
-            <Route exact path="/api-integration" component={ApiIntegration} />
+            <Route exact path="/breweries" component={Breweries} />
+            <Route exact path="/breweries/:breweryID" component={IndividualBrewery} />
             <Route exact path="/ui-task" component={Dashboard} />
         </Switch>
     </BrowserRouter>
