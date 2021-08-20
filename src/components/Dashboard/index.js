@@ -11,7 +11,7 @@ const Dashboard = () => {
             <SideNavigation />
             <div className="d-flex flex-column width-100">
                 <Header />
-                <div className="p-1">
+                <div className="pt-1 pl-1 pr-1 pb-0">
                     <div className="mt-1" style={{marginBottom: '5px'}}>
                         <span className="c-pointer text-info">Dashboard</span>
                         <span> / </span>
@@ -21,7 +21,7 @@ const Dashboard = () => {
                     </div>
                     <h2 className="d-flex align-items-center"><FiArrowLeft />Test Dashboard 1</h2>
                 </div>
-                <div className="d-flex">
+                <div className="d-flex p-1">
                     <Menu />
                     <Data />
                 </div>
