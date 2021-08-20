@@ -66,6 +66,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.c-pointer {
+ cursor: pointer;
+}
+
 .btn {
   display: inline-block;
   color: #222;
@@ -79,4 +83,14 @@ body {
 
 .btn:hover {
   background: #fff;
+}
+
+.text-muted {
+  color: #666;
+}
+
+.card {
+  padding: 1rem;
+  background: #ddd;
+  border-radius: 3px;
 }
