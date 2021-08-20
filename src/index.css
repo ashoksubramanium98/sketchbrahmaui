@@ -11,8 +11,16 @@ body {
   height: 100vh;
 }
 
+.width-100 {
+  width: 100vw;
+}
+
 .bg-white {
   background: #fff;
+}
+
+.bg-black {
+  background: #222;
 }
 
 .d-flex {
@@ -123,7 +131,7 @@ body {
 }
 
 .text-muted {
-  color: #666;
+  color: #BDBDBD;
 }
 
 .card {
@@ -136,6 +144,10 @@ body {
   background: #EFFAF5;
   width: 40px;
   height: 40px;
+}
+
+.sideNav {
+  width: 100px;
 }
 
 .border-100 {
@@ -160,4 +172,17 @@ body {
 
 .font-size-lg {
   font-size: 18px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.gradient-bg {
+  background: linear-gradient(86.76deg, #DEFB9D 11.13%, #71F79E 41.78%, #38F9D7 69%, #89C4FE 97.87%);
+}
+
+.gradient-color {
+  color: linear-gradient(86.76deg, #DEFB9D 11.13%, #71F79E 41.78%, #38F9D7 69%, #89C4FE 97.87%);
 }
