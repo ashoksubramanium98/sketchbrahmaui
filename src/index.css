@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #F8F8F8;
 }
 
 .page {
@@ -156,6 +157,10 @@ body {
 
 .text-primary {
   color: #60CA9A;
+}
+
+.text-info {
+  color: #0597F2;
 }
 
 .font-weight-600 {
