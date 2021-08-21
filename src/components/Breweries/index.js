@@ -70,8 +70,12 @@ const Breweries = ({history}) => {
 
     return(
         <div className="mr-1 ml-1">
-            <div className="d-flex align-items-center justify-content-between">
-                <h2 className="mt-1">List Breweries</h2>
+            <div className="d-flex align-items-center justify-content-between mt-1 mb-1">
+                <div className="d-flex align-items-center">
+                    <span className="c-pointer" onClick={() => history.push('/')}>Home</span>
+                    <span style={{margin: '0 5px'}}> / </span>
+                    <h2 className="m-0">List Breweries</h2>
+                </div>
                 <Button type="primary" onClick={() => history.push(`/breweries-search`)}>Search</Button>
             </div>
             <Table rowKey={"id"} size={'small'} loading={loading} columns={columns} dataSource={data} childrenColumnName="antdChildren" pagination={true} scroll={{x: 800}} />
