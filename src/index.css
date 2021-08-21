@@ -347,3 +347,101 @@ body {
 .card-gradient-bg {
   background: linear-gradient(333.75deg, #222222 2.14%, rgba(34, 34, 34, 0.9) 103.46%);
 }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 18px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: -9px;
+  bottom: 2px;
+  background-color: white;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+table {
+  width: 100%;
+}
+
+tbody {
+  border: 2px solid #F7F7F7;
+  border-top: none;
+}
+
+tbody tr {
+  border-bottom: 2px solid #F7F7F7;
+}
+
+.thead {
+  background: #222;
+  color: #fff;
+}
+
+thead th {
+  font-size: 12px;
+  padding: 15px;
+}
+
+tbody td {
+  font-size: 14px;
+  padding: 16px;
+  text-align: center;
+}
+
+thead th:first-child {
+  padding-left: 30px;
+}
+
+tbody td:first-child {
+  padding-left: 30px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-warning {
+  color: #E96560;
+}
+
+.firstDataRow {
+  padding-top: 30px;
+}

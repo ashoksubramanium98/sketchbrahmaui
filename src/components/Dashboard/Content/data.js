@@ -3,6 +3,7 @@ import { FaDatabase } from 'react-icons/fa';
 import { MdExplore } from 'react-icons/md';
 import { AiOutlineDashboard } from 'react-icons/ai';
 import { FiSettings, FiChevronDown, FiChevronUp } from 'react-icons/fi';
+import DriversTable from './table';
 
 const Data = () => (
     <div className="data-container">
@@ -60,6 +61,9 @@ const Data = () => (
                     <button className="card-button disabled">Create Dashboard</button>
                 </div>
             </div>
+            
+            <DriversTable />
+            
         </div>
     </div>
 );
