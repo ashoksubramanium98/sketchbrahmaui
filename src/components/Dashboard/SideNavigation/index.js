@@ -11,27 +11,27 @@ const SideNavigation = () => (
         </div>
         <div className="d-flex flex-column align-items-center sideNav-menu-option text-muted" style={{marginTop: '50px'}}>
             <FiHome className="icon" />
-            <p>Home</p>
+            <p className="text-center">Home</p>
         </div>
         <div className="d-flex flex-column align-items-center sideNav-menu-option text-primary">
             <AiOutlineDashboard className="icon gradient-color" />
-            <p className="gradient-color">Dashboard</p>
+            <p className="gradient-color text-center">Dashboard</p>
         </div>
         <div className="d-flex flex-column align-items-center sideNav-menu-option text-muted">
             <MdExplore className="icon" />
-            <p>KPI Explorer</p>
+            <p className="text-center">KPI Explorer</p>
         </div>
         <div className="d-flex flex-column align-items-center sideNav-menu-option text-muted">
             <FaRegChartBar className="icon" />
-            <p>Anomolies</p>
+            <p className="text-center">Anomolies</p>
         </div>
         <div className="d-flex flex-column align-items-center sideNav-menu-option text-muted">
             <FaDatabase className="icon" />
-            <p>Data Source</p>
+            <p className="text-center">Data Source</p>
         </div>
         <div className="d-flex flex-column align-items-center sideNav-menu-option text-muted">
             <MdNotificationsNone className="icon" />
-            <p>Alerts</p>
+            <p className="text-center">Alerts</p>
         </div>
     </div>
 );

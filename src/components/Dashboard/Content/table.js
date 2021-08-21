@@ -21,7 +21,7 @@ const DriversTable = () => (
                 <p className="m-0" style={{marginLeft: '5px'}}>Remove Overlap</p>
             </div>
         </div>
-        <div className="">
+        <div className="overflow-scroll">
             <table className="driversTable">
                 <thead className="thead">
                     <tr>

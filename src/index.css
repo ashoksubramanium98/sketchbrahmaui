@@ -156,9 +156,10 @@ body {
 }
 
 .card {
-  padding: 1rem;
+  padding: 0 1rem;
   background: #ddd;
   border-radius: 3px;
+  margin: 20px 0;
 }
 
 .profile-background {
@@ -455,6 +456,10 @@ table {
   padding: 15px;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
 .driversTable tbody td {
   font-size: 14px;
   padding: 16px;
@@ -504,4 +509,38 @@ table {
 
 .bizcharts{
   height: 100% !important;
+}
+
+@media screen and (max-width: 1400px) { 
+  .subMenuContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .sub-menu {
+    width: 98%;
+    min-height: auto;
+  }
+  .data-container {
+    width: 98%;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 1000px) { 
+  .analyticsContainer {
+    flex-direction: column;
+  }
+  .analyticsContainer div {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 600px) { 
+  .input-group {
+    width: 100%;
+    padding: 30px;
+  }
+  .secondary-tag-hide {
+    display: none;
+  }
 }

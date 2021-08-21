@@ -10,14 +10,14 @@ const Analytics = () => (
                 <h3 className="text-primary border-bottom-primary-2 p-1 m-0" style={{padding :'1rem 2rem'}}>AutoRCA</h3>
                 <h3 className="p-1 m-0" style={{padding :'1rem 2rem'}}>Anomolies</h3>
             </div>
-            <div className="d-flex align-items-center secondary-tag"><FiSettings style={{marginRight: '5px'}} /> Settings</div>
+            <div className="d-flex align-items-center secondary-tag secondary-tag-hide"><FiSettings style={{marginRight: '5px'}} /> Settings</div>
         </div>
         <hr className="m-0 horizontal-border" />
         <div style={{padding: '5px 10px 30px 5px', margin: '10px'}}>
             <div className="d-flex justify-content-end">
                 <div className="d-flex align-items-center secondary-tag">Current Month on Last Month <FiChevronDown style={{marginLeft: '5px'}} /></div>
             </div>
-            <div className="d-flex mt-1">
+            <div className="d-flex mt-1 analyticsContainer">
                 <div style={{border: '1px solid #F5F5F5', borderRadius: '20px', padding: '10px 10px 20px 10px', width: '50%'}}>
                     <table className="analyticsTable">
                         <thead>

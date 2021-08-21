@@ -21,7 +21,7 @@ const Dashboard = () => {
                     </div>
                     <h2 className="d-flex align-items-center"><FiArrowLeft />Test Dashboard 1</h2>
                 </div>
-                <div className="d-flex p-1">
+                <div className="d-flex p-1 subMenuContainer">
                     <Menu />
                     <Data />
                 </div>

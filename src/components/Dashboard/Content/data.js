@@ -25,11 +25,11 @@ const Data = () => (
                         <h3 className="m-0 font-weight-400" style={{padding :'0 1rem 13px 1rem'}}>Education</h3>
                         <h3 className="m-0 font-weight-400" style={{padding :'0 1rem 13px 1rem'}}>Job</h3>
                     </div>
-                    <div style={{marginBottom: '10px'}} className="d-flex align-items-center secondary-tag">Multidimensional <FiChevronDown style={{marginLeft: '5px'}} /></div>
+                    <div style={{marginBottom: '10px'}} className="d-flex align-items-center secondary-tag secondary-tag-hide">Multidimensional <FiChevronDown style={{marginLeft: '5px'}} /></div>
                 </div>
                 <hr className="m-0 horizontal-border" />
             </div>
-            <div className="d-flex p-1 card-container">
+            <div className="d-flex p-1 card-container flex-wrap">
                 <div className="bg-grey card">
                     <div className="card-icon-background"><FaDatabase className="text-white font-size-xl" /></div>
                     <h3 className="font-weight-600">Add Data Sources</h3>
