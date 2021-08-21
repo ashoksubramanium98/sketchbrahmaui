@@ -22,15 +22,15 @@ const DriversTable = () => (
             </div>
         </div>
         <div className="">
-            <table>
+            <table className="driversTable">
                 <thead className="thead">
                     <tr>
-                        <th className="text-left" style={{borderTopLeftRadius: '9px'}}>Sub Group Name</th>
-                        <th>April Avg</th>
-                        <th>May Avg</th>
-                        <th>April Sub Group population</th>
-                        <th>May Sub Group population</th>
-                        <th style={{borderTopRightRadius: '9px'}}>Net Impact on Overall Avg</th>
+                        <td className="text-left" style={{borderTopLeftRadius: '9px'}}>Sub Group Name</td>
+                        <td>April Avg</td>
+                        <td>May Avg</td>
+                        <td>April Sub Group population</td>
+                        <td>May Sub Group population</td>
+                        <td style={{borderTopRightRadius: '9px'}}>Net Impact on Overall Avg</td>
                     </tr>
                 </thead>
                 <tbody>

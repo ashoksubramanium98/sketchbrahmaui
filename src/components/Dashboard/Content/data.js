@@ -2,27 +2,14 @@ import React from 'react';
 import { FaDatabase } from 'react-icons/fa';
 import { MdExplore } from 'react-icons/md';
 import { AiOutlineDashboard } from 'react-icons/ai';
-import { FiSettings, FiChevronDown, FiChevronUp } from 'react-icons/fi';
+import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
+import Analytics from './analytics';
 import DriversTable from './table';
 import Forms from './form';
 
 const Data = () => (
     <div className="data-container">
-        <div className="bg-white border-radius-10">
-            <div className="d-flex align-items-center justify-content-between" style={{padding: '5px 10px', margin: '0 15px 0 5px'}}>
-                <div className="d-flex ">
-                    <h3 className="text-primary border-bottom-primary-2 p-1 m-0" style={{padding :'1rem 2rem'}}>AutoRCA</h3>
-                    <h3 className="p-1 m-0" style={{padding :'1rem 2rem'}}>Anomolies</h3>
-                </div>
-                <div className="d-flex align-items-center secondary-tag"><FiSettings style={{marginRight: '5px'}} /> Settings</div>
-            </div>
-            <hr className="m-0 horizontal-border" />
-            <div style={{padding: '5px 10px 0 5px', margin: '10px'}}>
-                <div className="d-flex justify-content-end">
-                    <div className="d-flex align-items-center secondary-tag">Current Month on Last Month <FiChevronDown style={{marginLeft: '5px'}} /></div>
-                </div>
-            </div>
-        </div>
+        <Analytics />
 
         <div className="bg-white border-radius-10">
             <div className="d-flex align-items-center justify-content-between" style={{padding: '5px 10px', margin: '0 15px 0 5px'}}>
