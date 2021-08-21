@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 import { FiSettings, FiChevronDown } from 'react-icons/fi';
+import ChartAuto from './chart';
 
 const Analytics = () => (
     <div className="bg-white border-radius-10">
@@ -16,7 +17,7 @@ const Analytics = () => (
             <div className="d-flex justify-content-end">
                 <div className="d-flex align-items-center secondary-tag">Current Month on Last Month <FiChevronDown style={{marginLeft: '5px'}} /></div>
             </div>
-            <div className="d-flex">
+            <div className="d-flex mt-1">
                 <div style={{border: '1px solid #F5F5F5', borderRadius: '20px', padding: '10px 10px 20px 10px', width: '50%'}}>
                     <table className="analyticsTable">
                         <thead>
@@ -67,9 +68,7 @@ const Analytics = () => (
                         </tbody>
                     </table>
                 </div>
-                <div>
-
-                </div>
+                <ChartAuto />
             </div>
         </div>
     </div>
