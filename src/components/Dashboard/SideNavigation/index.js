@@ -9,27 +9,27 @@ const SideNavigation = () => (
         <div className="d-flex flex-column align-items-center mt-1 mb-1">
             <FaBars className="icon gradient-bg" />
         </div>
-        <div className="d-flex flex-column align-items-center mt-1 mb-1 text-muted" style={{marginTop: '50px'}}>
+        <div className="d-flex flex-column align-items-center sideNav-menu-option text-muted" style={{marginTop: '50px'}}>
             <FiHome className="icon" />
             <p>Home</p>
         </div>
-        <div className="d-flex flex-column align-items-center mt-1 mb-1 text-primary">
+        <div className="d-flex flex-column align-items-center sideNav-menu-option text-primary">
             <AiOutlineDashboard className="icon gradient-color" />
             <p className="gradient-color">Dashboard</p>
         </div>
-        <div className="d-flex flex-column align-items-center mt-1 mb-1 text-muted">
+        <div className="d-flex flex-column align-items-center sideNav-menu-option text-muted">
             <MdExplore className="icon" />
             <p>KPI Explorer</p>
         </div>
-        <div className="d-flex flex-column align-items-center mt-1 mb-1 text-muted">
+        <div className="d-flex flex-column align-items-center sideNav-menu-option text-muted">
             <FaRegChartBar className="icon" />
             <p>Anomolies</p>
         </div>
-        <div className="d-flex flex-column align-items-center mt-1 mb-1 text-muted">
+        <div className="d-flex flex-column align-items-center sideNav-menu-option text-muted">
             <FaDatabase className="icon" />
             <p>Data Source</p>
         </div>
-        <div className="d-flex flex-column align-items-center mt-1 mb-1 text-muted">
+        <div className="d-flex flex-column align-items-center sideNav-menu-option text-muted">
             <MdNotificationsNone className="icon" />
             <p>Alerts</p>
         </div>
